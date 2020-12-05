@@ -9,10 +9,10 @@
     <div class="page-body__wrapper">
       <header class="page-header">
         <div class="page-header__container">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-image" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип приложения «Пинк»">
           </a>
-          <nav class="main-nav">
+          <nav class="page-header__main-nav main-nav">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
@@ -25,16 +25,16 @@
       </header>
     </div>
     <main class="page-main">
-      <section class="contest-intro contest-intro__background"> <!--contest-intro__background -класс что бы навесить бэкграунд , возможно не правильно-->
+      <section class="page-main__contest-intro contest-intro contest-intro--background"> <!--Выбрал второй ваниант-->
         <div class="contest-intro__container">
           <h1 class="contest-intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
-      <section class="contest">
+      <section class="page-main__contest contest">
         <div class="contest__container">
           <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
         </div>
-        <div class="contest__common-container"> <!--Центровщик для десктопной версии, возможно лучше повесить его на мейн-->
+        <div class="contest__common-container"> <!--Решил оставить так, при стилизации уже буду думать если будут траблы-->
           <form class="contest__form" method="post" action="https://echo.htmlacademy.ru" target="_blank">
             <div class="contest__container user-info">
               <p class="user-info__item">
@@ -163,22 +163,22 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal-failure">
+    <section class="modal modal--failure">
       <div class="modal__container">
-        <h2 class="modal-failure__title">Что-то пошло не так!</h2>
-        <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
       <div class="modal__background modal__background--off">
-        <button class="modal-failure__button button">Ок</button>
+        <button class="modal__button button">Ок</button>
       </div>
     </section>
-    <section class="modal modal-succes">
+    <section class="modal modal--succes">
       <div class="modal__container">
-        <h2 class="modal-succes__title">Ваша заявка отправлена</h2>
-        <p class="modal-succes__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <h2 class="modal__title">Ваша заявка отправлена</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       </div>
       <div class="modal__background modal__background--off">
-        <button class="modal-succes__button button">Закрыть окно</button>
+        <button class="modal__button button">Закрыть окно</button>
       </div>
     </section>
   </body>
