@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page-body">
+    <div class="page-body__wrapper">
+      <header class="page-header">
+        <div class="page-header__container">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип приложения «Пинк»">
+          </a>
+          <nav class="page-header__main-nav main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <main class="page-main">
+      <section class="page-main__contest-intro contest-intro contest-intro--background"> <!--Выбрал второй ваниант-->
+        <div class="contest-intro__container">
+          <h1 class="contest-intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
+      <section class="page-main__contest contest">
+        <div class="contest__container">
+          <h2 class="contest__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        </div>
+        <div class="contest__common-container"> <!--Решил оставить так, при стилизации уже буду думать если будут траблы-->
+          <form class="contest__form" method="post" action="https://echo.htmlacademy.ru" target="_blank">
+            <div class="contest__container user-info">
+              <p class="user-info__item">
+                <label class="user-info__subtitle" for="user-info__surname">Фамилия:</label>
+                <input class="user-info__text" id="user-info__surname" type="text" name="surname" placeholder="Укажите фамилию *">
+              </p>
+              <p class="user-info__item">
+                <label class="user-info__subtitle" for="user-info__first-name">Имя:</label>
+                <input class="user-info__text" id="user-info__first-name" type="text" name="first-name" placeholder="Введите ваше имя *">
+              </p>
+              <p class="user-info__item">
+                <label class="user-info__subtitle" for="user-info__patronymic">Отчество:</label>
+                <input class="user-info__text" id="user-info__patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </p>
+            </div>
+            <div class="contest__wrapper">
+              <div class="contest__container">
+                <fieldset class="contest__achievements contest__achievements--off-frame user-achievements">
+                  <legend class="user-achievements__title">Ваши безбашенные достижения в путешествии</legend>
+                  <ul class="user-achievements__list">
+                    <li class="user-achievements__item">
+                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__shark" id="user-achievements__shark" checked>
+                      <label class="user-achievements__subtitle user-achievements__subtitle--selected" for="user-achievements__shark">Сделал селфи с акулой</label>
+                    </li>
+                    <li class="user-achievements__item">
+                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__sunburned" id="user-achievements__sunburned" checked>
+                      <label class="user-achievements__subtitle user-achievements__subtitle--selected" for="user-achievements__sunburned">Обгорел на пляже</label>
+                    </li>
+                    <li class="user-achievements__item">
+                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__norris" id="user-achievements__norris">
+                      <label class="user-achievements__subtitle user-achievements__subtitle--selected" for="user-achievements__norris">Видел Чака Норриса</label>
+                    </li>
+                    <li class="user-achievements__item">
+                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__souvenir" id="user-achievements__souvenir">
+                      <label class="user-achievements__subtitle user-achievements__subtitle--selected" for="user-achievements__souvenir">Накупил сувениров</label>
+                    </li>
+                    <li class="user-achievements__item">
+                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__tower" id="user-achievements__tower" checked>
+                      <label class="user-achievements__subtitle user-achievements__subtitle--selected" for="user-achievements__tower">Удержал башню</label>
+                    </li>
+                    <li class="user-achievements__item">
+                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__hotel" id="user-achievements__hotel">
+                      <label class="user-achievements__subtitle user-achievements__subtitle--selected" for="user-achievements__hotel">Разгромил отель</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contest__container">
+              <fieldset class="contest__contacts contest__contacts--off-frame user-contacts">
+                <legend class="user-contacts__title user-contacts__title--off">Контактная информация</legend>
+                <ul class="user-contacts__list">
+                  <li class="user-contacts__item">
+                    <label class="user-contacts__subtitle user-contacts__subtitle--reverse" for="user-contacts__phone-number">Номер телефона</label>
+                    <input class="user-contacts__input user-contacts__input--icon-phone" id="user-contacts__phone-number" type="tel" name="user-contacts__phone-number" placeholder="Номер, пожалуйста">
+                  </li>
+                  <li class="user-contacts__item">
+                    <label class="user-contacts__subtitle user-contacts__subtitle--reverse" for="user-contacts__email">Адрес почты</label>
+                    <input class="user-contacts__input user-contacts__input--icon-email" id="user-contacts__email" type="email" name="user-contacts__email" placeholder="Введите почту *">
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="contest__wrapper">
+              <div class="contest__container">
+                <fieldset class="contest__app-platform contest__app-platform--off-frame app-platform">
+                  <legend class="app-platform__title">С каким приложением путешествовали?</legend>
+                  <ul class="app-platform__list">
+                    <li class="app-platform__item">
+                      <input class="visually-hidden app-platform__radio app-platform__radio--selected" type="radio" name="app-platform__group" value="ios" id="app-platform__ios" checked>
+                      <label class="app-platform__subtitle app-platform__radio--selected--selected" for="app-platform__ios">Pink для iOS</label>
+                    </li>
+                    <li class="app-platform__item">
+                      <input class="visually-hidden app-platform__radio app-platform__radio--selected" type="radio" name="app-platform__group" value="android" id="app-platform__android">
+                      <label class="app-platform__subtitle app-platform__radio--selected--selected" for="app-platform__android">Pink на Android</label>
+                    </li>
+                    <li class="app-platform__item">
+                      <input class="visually-hidden app-platform__radio app-platform__radio--selected" type="radio" name="app-platform__group" value="windows" id="app-platform__windows">
+                      <label class="app-platform__subtitle app-platform__radio--selected--selected" for="app-platform__windows">Windows Phone</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contest__container">
+              <fieldset class="contest__user-message contest__user-message--off-frame user-message">
+                <legend class="user-message__title">Опишите свои эмоции</legend>
+                <textarea class="user-message__input"  name="user-message"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+            </div>
+            <div class="contest__container contest__submit-button-wrapper">
+              <button class="contest__submit-button button" type="submit">Отправить форму</button>
+              <p class="contest__explanation">* — обязательные поля</p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип приложения «Пинк»">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Мы в Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы на Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+        </div>
+      </div>
+    </footer>
+    <section class="modal modal--failure">
+      <div class="modal__container">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__background modal__background--off">
+        <button class="modal__button button">Ок</button>
+      </div>
+    </section>
+    <section class="modal modal--succes">
+      <div class="modal__container">
+        <h2 class="modal__title">Ваша заявка отправлена</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </div>
+      <div class="modal__background modal__background--off">
+        <button class="modal__button button">Закрыть окно</button>
+      </div>
+    </section>
+  </body>
+</html>
