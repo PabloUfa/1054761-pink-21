@@ -1,0 +1,26 @@
+.copyright {
+  position: relative;
+}
+
+.copyright__text {
+  font-size: 14px;
+  line-height: 18px;
+
+}
+
+.copyright__link {
+  padding-right: 42px;
+
+  &--developed::before {
+    // display: block;
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: 103px;
+    width: 27px;
+    height: 34px;
+    background-image: url(https://via.placeholder.com/27x34);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+}
