@@ -1,0 +1,60 @@
+.user-achievements {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $lighten-grey;
+}
+
+.user-achievements__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+
+}
+
+.user-achievements__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-achievements__item {
+
+}
+
+.user-achievements__subtitle {
+  position: relative;
+  padding-left: 79px;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.user-achievements__checkbox + .user-achievements__subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 39px;
+  height: 39px;
+  border: 2px solid $light-grey-3;
+  background-color: $basic-white;
+  border-radius: 2px;
+
+}
+
+.user-achievements__checkbox--selected:checked + .user-achievements__subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 39px;
+  height: 39px;
+  background-image:url(https://via.placeholder.com/22x16);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid $light-grey-3;
+  border-radius: 2px;
+}
+

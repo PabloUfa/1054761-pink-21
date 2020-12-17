@@ -1,0 +1,53 @@
+.app-platform {
+  margin: 0;
+  padding: 0;
+  background-color: $lighten-grey;
+}
+
+.app-platform__title {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.app-platform__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-platform__item {
+
+}
+
+.app-platform__subtitle {
+  position: relative;
+  padding-left: 90px;
+  line-height: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.app-platform__radio + .app-platform__subtitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 41px;
+  height: 41px;
+  border: 2px solid $light-grey-3;
+  background-color: $basic-white;
+  border-radius: 50%;
+}
+
+.app-platform__radio--selected:checked + .app-platform__subtitle::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  background-color: $pink;
+  border-radius: 50%;
+}
