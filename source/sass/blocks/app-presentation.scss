@@ -1,0 +1,66 @@
+.app-presentation {
+  color: $basic-white;
+  background-color: $dark-grey;
+}
+
+.app-presentation__intro {
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 358px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+.app-presentation__download-button {
+  padding: 17px 36px;
+  color: $basic-white;
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 700;
+  border: 3px solid $basic-white;
+  border-radius: 50px;
+}
+
+.app-presentation__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-presentation__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.app-presentation__link {
+  display: block;
+  background-image: url(https://via.placeholder.com/47x56);
+  background-repeat: no-repeat;
+  background-position: cover;
+
+    &--ios  {
+      width: 47px;
+      height: 56px;
+      background-image: url(https://via.placeholder.com/47x56);
+    }
+
+    &--android  {
+      width: 43px;
+      height: 47px;
+      background-image: url(https://via.placeholder.com/43x47);
+    }
+
+    &--windows {
+      width: 44px;
+      height: 41px;
+      background-image: url(https://via.placeholder.com/44x41);
+    }
+}
+
+.app-presentation__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+}

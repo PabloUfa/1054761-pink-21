@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body class="page-body">
-    <div class="page-body__wrapper">
+  <body class="page__body">
+    <div class="page-header__wrapper">
       <header class="page-header">
         <div class="page-header__container">
           <a class="page-header__logo">
@@ -33,14 +34,14 @@
           <div class="app-presentation__container">
             <a class="app-presentation__download-button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="app-presentation__list">
-              <li class="app-presentation__item app-presentation__item--ios" aria-label="Скачать для ios">
-                <a class="app-presentation-link" href="https://www.apple.com/ru/app-store/"></a>
+              <li class="app-presentation__item" aria-label="Скачать для ios">
+                <a class="app-presentation__link app-presentation__link--ios" href="https://www.apple.com/ru/app-store/"></a>
               </li>
-              <li class="app-presentation__item app-presentation__item--android" aria-label="Скачать для Android">
-                <a class="app-presentation-link" href="https://androidmarkets.ru/"></a>
+              <li class="app-presentation__item" aria-label="Скачать для Android">
+                <a class="app-presentation__link app-presentation__link--android" href="https://androidmarkets.ru/"></a>
               </li>
-              <li class="app-presentation__item app-presentation__item--windows" aria-label="Скачать для Windows">
-                <a class="app-presentation-link" href="https://www.microsoft.com/ru-ru/store/apps"></a>
+              <li class="app-presentation__item" aria-label="Скачать для Windows">
+                <a class="app-presentation__link app-presentation__link--windows" href="https://www.microsoft.com/ru-ru/store/apps"></a>
               </li>
             </ul>
             <p class="app-presentation__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -85,7 +86,7 @@
       <section class="page-main__feedback feedback">
         <h2 class="visually-hidden">Отзывы о приложении «Пинк»</h2>
         <div class="feedback__container slider">
-          <ul class="slider__list">
+          <ul class="feedback__list slider__list">
             <li class="feedback__item feedback__item--feedback-icon slider__item">
               <blockquote>
                 <div class="feedback__author-position">
@@ -117,6 +118,7 @@
                   <span class="tariffs__cost">1,99 USD</span>
                 </th>
                 <th class="tariffs__header tariffs__header--hit-marker">
+                  <span class="visually-hidden">Наиболее популярный тариф</span>
                   <span class="tariffs__name">Стандарт</span>
                   <span class="tariffs__cost">3,99 USD</span>
                 </th>
@@ -125,8 +127,8 @@
                   <span class="tariffs__cost">9,99 USD</span>
                 </th>
               </tr>
-              <tr>
-                <td class="tariffs__option">Розовый фильтр</td>
+              <tr class="tariffs__footer">
+                <td class="tariffs__option tariffs__option--big-screens tariffs__option--big-screens-round-top">Розовый фильтр</td>
                 <td class="tariffs__option">
                   <div class="tariffs__table-wrapper">
                     <span class="tariffs__option tariffs__option--slide-mode">Розовый фильтр</span>
@@ -146,8 +148,8 @@
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td class="tariffs__option">Смайлики</td>
+              <tr class="tariffs__footer">
+                <td class="tariffs__option tariffs__option--big-screens">Смайлики</td>
                 <td class="tariffs__option">
                   <div class="tariffs__table-wrapper">
                     <span class="tariffs__option tariffs__option--slide-mode">Смайлики</span>
@@ -167,8 +169,8 @@
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td class="tariffs__option">Комментарии</td>
+              <tr class="tariffs__footer">
+                <td class="tariffs__option tariffs__option--big-screens tariffs__option--big-screens-round-bottom">Комментарии</td>
                 <td class="tariffs__option">
                   <div class="tariffs__table-wrapper">
                     <span class="tariffs__option tariffs__option--slide-mode">Комментарии</span>
@@ -181,7 +183,7 @@
                     <span class="tariffs__perk tariffs__perk--no" aria-label="Нет"></span>
                   </div>
                 </td>
-                <td class="tariffs__option">
+                <td class="tariffs__option tariffs__option--rounded">
                   <div class="tariffs__table-wrapper">
                     <span class="tariffs__option tariffs__option--slide-mode">Комментарии</span>
                     <span class="tariffs__perk tariffs__perk--yes" aria-label="Да"></span>
@@ -189,7 +191,7 @@
                 </td>
               </tr>
             </table>
-            <p class="tariffs__toggles slider-pagination__toggles">
+            <p class="tariffs__toggles slider-pagination">
               <button class="slider-pagination__toggle" type="button" aria-label="Первый слайд"></button>
               <button class="slider-pagination__toggle slider-pagination__toggle--current" type="button" aria-label="Второй слайд"></button>
               <button class="slider-pagination__toggle" type="button" aria-label="Третий слайд"></button>
@@ -247,7 +249,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link copyright__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+          <a class="copyright__link copyright__link--developed" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
         </div>
       </div>
     </footer>

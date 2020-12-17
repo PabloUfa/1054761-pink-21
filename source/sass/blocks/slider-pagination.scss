@@ -1,0 +1,24 @@
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.slider-pagination__toggle {
+  margin-right: 19px;
+  padding: 0;
+  border: none;
+  width: 6px;
+  height: 6px;
+  background-color: $light-grey;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--current {
+    width: 12px;
+    height: 12px;
+    background-color: $basic-white;
+    border: 3px solid $dark-blue;
+  }
+}
+

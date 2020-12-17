@@ -1,0 +1,27 @@
+.feedback {
+
+}
+
+.feedback__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feedback__author {
+  margin-bottom: 30px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 700;
+  color: $basic-black;
+}
+
+.feedback__author-info {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 30px;
+}
