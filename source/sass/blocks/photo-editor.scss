@@ -1,0 +1,151 @@
+.photo-editor {
+
+}
+
+.photo-editor__text-intro {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.photo-editor__wrapper {
+  background-color: $lighten-grey;
+}
+
+.photo-editor__added-photo {
+  margin-bottom: 42px;
+  width: 280px;
+  height: 374px;
+}
+
+.photo-editor__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+  list-style: none;
+  // border-bottom: 1px solid $light-grey-4;
+  // background-color: red;
+}
+
+.photo-editor__item {
+  position: relative;
+  opacity: 0.3;
+  background-color: red;
+  border-bottom: 1px solid red;
+
+
+  &--current {
+    opacity: 1;
+  }
+
+  &--current .photo-editor__range-controls{
+    display: block;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: red;
+  }
+}
+
+.photo-editor__visual-setting {
+  position: absolute;
+  content: "";
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+
+  &--cropping-icon {
+    top: 0;
+    left: 37px;
+    width: 44px;
+    height: 44px;
+    background-image: url(https://via.placeholder.com/44x44);
+  }
+
+  &--color-filling-icon {
+    top: 0;
+    left: 116px;
+    width: 48px;
+    height: 43px;
+    background-image: url(https://via.placeholder.com/48x43);
+  }
+
+  &--color-picking-icon {
+    top: 0;
+    left: 199px;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://via.placeholder.com/32x32);
+  }
+}
+
+.photo-editor__range-controls {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 50px;
+  left: 0;
+  cursor: pointer;
+}
+
+.photo-editor__range-scale {
+  width: 260px;
+  height: 2px;
+  background-color: $dark-blue;
+  margin-bottom: 34px;
+}
+
+.photo-editor__range-toggle {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 193px;
+  width: 14px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+}
+
+.photo-editor__buttons_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 38px;
+
+}
+
+.photo-editor__button {
+  display: inline-block;
+  padding: 21px 0;
+  min-width: 280px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $pink;
+  text-align: center;
+  vertical-align: middle;
+  border: 3px solid $pink;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: transparent;
+
+  &--submit {
+    margin-bottom: 12px;
+  }
+
+  &--cancel:disabled {
+    color: rgba($dark-blue, 0.1%);
+    border: 3px solid $light-grey-4;
+    cursor: default;
+  }
+}

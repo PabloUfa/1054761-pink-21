@@ -1,0 +1,40 @@
+.users-pictures {
+
+}
+
+.users-pictures__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.users-pictures__item {
+
+}
+
+.users-pictures__user-image {
+  width: 280px;
+  height: 180px;
+}
+
+.users-pictures__user-caption {
+  background-color: $lighten-grey;
+  margin: 0;
+}
+
+.users-pictures__user-name {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.users-pictures__comment-date {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.users-pictures__user-text {
+  margin: 0;
+  font-size: 14px;
+}

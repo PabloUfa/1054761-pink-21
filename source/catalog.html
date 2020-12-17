@@ -28,10 +28,10 @@
     <main class="page-main">
       <h1 class="page-main__title">Фотографии пользователей</h1>
       <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <section class="page-main__best-picture best-picture--background">
+      <section class="page-main__best-picture best-picture best-picture--background">
         <h2 class="visually-hidden">Здесь ежедневно появляются самые интересные фото от наших пользователей</h2>
-        <div class="best-picture__wrapper">
-          <img class="best-picture__user-image best-picture__user-image--best-marker" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама с моста на фоне гор,покрытых деревьями">
+        <div class="best-picture__wrapper best-picture__wrapper--best-marker">
+          <img class="best-picture__user-image" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама с моста на фоне гор,покрытых деревьями">
         </div>
         <div class="best-picture__container">
           <blockquote class="best-picture__user-caption best-picture__container">
@@ -40,9 +40,9 @@
               <time class="best-picture__comment-date" datetime="2020-12-05">(5 минут назад)</time>
             </cite>
             <p class="best-picture__user-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="best-picture__like-wrapper">
-              <p class="best-picture__like-text">Нравится: <span class="best-picture__like-counter">215</span></p>
-              <button class="best-picture__like-icon" type="button" aria-label="Кнопка: нравится"></button>
+            <div class="best-picture__like-wrapper user-rating">
+              <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">215</span></p>
+              <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
             </div>
           </blockquote>
         </div>
@@ -59,9 +59,9 @@
                   <time class="users-pictures__comment-date" datetime="2020-12-05">(5 часов назад)</time>
                 </cite>
                 <p class="users-pictures__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <div class="users-pictures__like-wrapper">
-                  <p class="users-pictures__like-text">Нравится: <span class="users-pictures__like-counter">356</span></p>
-                  <button class="users-pictures__like-icon" type="button" aria-label="Кнопка: нравится"></button>
+                <div class="users-pictures__like-wrapper user-rating">
+                  <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">356</span></p>
+                  <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
                 </div>
               </blockquote>
             </li>
@@ -73,9 +73,9 @@
                   <time class="users-pictures__comment-date" datetime="2020-12-05">(12 часов назад)</time>
                 </cite>
                 <p class="users-pictures__user-text">Соседи будут рады!</p>
-                <div class="users-pictures__like-wrapper">
-                  <p class="users-pictures__like-text">Нравится: <span class="users-pictures__like-counter">666</span></p>
-                  <button class="users-pictures__like-icon" type="button" aria-label="Кнопка: нравится"></button>
+                <div class="users-pictures__like-wrapper user-rating">
+                  <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">666</span></p>
+                  <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
                 </div>
               </blockquote>
             </li>
@@ -87,9 +87,9 @@
                   <time class="users-pictures__comment-date" datetime="2020-12-05">(20 часов назад)</time>
                 </cite>
                 <p class="users-pictures__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                <div class="users-pictures__like-wrapper">
-                  <p class="users-pictures__like-text">Нравится: <span class="users-pictures__like-counter">215</span></p>
-                  <button class="users-pictures__like-icon" type="button" aria-label="Кнопка: нравится"></button>
+                <div class="users-pictures__like-wrapper user-rating">
+                  <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">215</span></p>
+                  <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
                 </div>
               </blockquote>
             </li>
@@ -101,9 +101,9 @@
                   <time class="users-pictures__comment-date" datetime="2020-12-05">(25 часов назад)</time>
                 </cite>
                 <p class="users-pictures__user-text">Самая кубанская в мире!</p>
-                <div class="users-pictures__like-wrapper">
-                  <p class="users-pictures__like-text">Нравится: <span class="users-pictures__like-counter">4</span></p>
-                  <button class="users-pictures__like-icon" type="button" aria-label="Кнопка: нравится"></button>
+                <div class="users-pictures__like-wrapper user-rating">
+                  <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">4</span></p>
+                  <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
                 </div>
               </blockquote>
             </li>
@@ -115,9 +115,9 @@
                   <time class="users-pictures__comment-date" datetime="2020-12-05">(40 часов назад)</time>
                 </cite>
                 <p class="users-pictures__user-text">Где снег-то?</p>
-                <div class="users-pictures__like-wrapper">
-                  <p class="users-pictures__like-text">Нравится: <span class="users-pictures__like-counter">150</span></p>
-                  <button class="users-pictures__like-icon" type="button" aria-label="Кнопка: нравится"></button>
+                <div class="users-pictures__like-wrapper user-rating">
+                  <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">150</span></p>
+                  <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
                 </div>
               </blockquote>
             </li>
@@ -129,9 +129,9 @@
                   <time class="users-pictures__comment-date" datetime="2020-12-05">(45 часов назад)</time>
                 </cite>
                 <p class="users-pictures__user-text">Всем GM и взаимные лайки!</p>
-                <div class="users-pictures__like-wrapper">
-                  <p class="users-pictures__like-text">Нравится: <span class="users-pictures__like-counter">2560</span></p>
-                  <button class="users-pictures__like-icon" type="button" aria-label="Кнопка: нравится"></button>
+                <div class="users-pictures__like-wrapper user-rating">
+                  <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">2560</span></p>
+                  <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
                 </div>
               </blockquote>
             </li>
@@ -151,37 +151,31 @@
               <div class="photo-editor__settings ">
                 <ul class="photo-editor__list">
                   <li class="photo-editor__item photo-editor__item--current">
-                    <button class="photo-editor__cropping photo-editor__cropping--icon photo-editor__cropping--current" type="button" aria-label="Обрезка фото по размеру"></button>
+                    <button class="photo-editor__visual-setting photo-editor__visual-setting--cropping-icon photo-editor__visual-setting--current" type="button" aria-label="Обрезка фото по размеру"></button>
                     <div class="photo-editor__range-controls">
-                      <div class="photo-editor__range-scale">
-                        <div class="photo-editor__range-bar"></div>
-                      </div>
-                      <div class="photo-editor__range-toggle" tabindex="0"></div>
+                      <div class="photo-editor__range-scale"></div>
+                      <div class="photo-editor__range-toggle" tabindex="0" style="left: 80%;"></div>
                     </div>
                   </li>
                   <li class="photo-editor__item">
-                    <button class="photo-editor__color-filling photo-editor__color-filling--icon" type="button" aria-label="Заливка фото нужным цветом"></button>
+                    <button class="photo-editor__visual-setting photo-editor__visual-setting--color-filling-icon" type="button" aria-label="Заливка фото нужным цветом"></button>
                     <div class="photo-editor__range-controls">
-                      <div class="photo-editor__range-scale">
-                        <div class="photo-editor__range-bar"></div>
-                      </div>
-                      <div class="photo-editor__range-toggle" tabindex="0"></div>
+                      <div class="photo-editor__range-scale"></div>
+                      <div class="photo-editor__range-toggle" tabindex="0" style="left: 80%;"></div>
                     </div>
                   </li>
                   <li class="photo-editor__item">
-                    <button class="photo-editor__color-picking photo-editor__color-picking--icon" type="button" aria-label="Выбор цвета"></button>
+                    <button class="photo-editor__visual-setting photo-editor__visual-setting--color-picking-icon" type="button" aria-label="Выбор цвета"></button>
                     <div class="photo-editor__range-controls">
-                      <div class="photo-editor__range-scale">
-                        <div class="photo-editor__range-bar"></div>
-                      </div>
-                      <div class="photo-editor__range-toggle" tabindex="0"></div>
+                      <div class="photo-editor__range-scale"></div>
+                      <div class="photo-editor__range-toggle" tabindex="0" style="left: 80%;"></div>
                     </div>
                   </li>
                 </ul>
               </div>
               <div class="photo-editor__buttons_wrapper">
                 <button class="photo-editor__button photo-editor__button--submit" type="submit">Запостить</button>
-                <button class="photo-editor__button photo-editor__button--cancel" type="button">Отмена</button>
+                <button class="photo-editor__button photo-editor__button--cancel" type="button" disabled>Отмена</button>
               </div>
             </form>
           </div>
