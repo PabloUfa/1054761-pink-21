@@ -1,0 +1,42 @@
+.contest {
+
+}
+
+.contest__title {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.contest__contacts {
+  border: 2px solid $light-grey-3;
+
+  &--off-frame {
+    border: none;
+  }
+}
+
+.contest__app-platform {
+  border: 2px solid $light-grey-3;
+
+  &--off-frame {
+    border: none;
+  }
+}
+
+.contest__user-message {
+  border: 2px solid $light-grey-3;
+
+  &--off-frame {
+    border: none;
+  }
+}
+
+.contest__explanation {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+
+  &--star {
+    color: $pink;
+  }
+}

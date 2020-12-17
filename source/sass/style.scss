@@ -1,8 +1,9 @@
 // Global
 
 @import "global/variables.scss";
-@import "global/global.scss";
 @import "global/fonts.scss";
+@import "global/global.scss";
+@import "blocks/button.scss";
 
 // Blocks
 
@@ -22,3 +23,12 @@
 @import "blocks/page-footer.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+
+@import "blocks/contest-intro.scss";
+@import "blocks/contest.scss";
+@import "blocks/user-info.scss";
+@import "blocks/user-achievements.scss";
+@import "blocks/user-contacts.scss";
+@import "blocks/app-platform.scss";
+@import "blocks/user-message.scss";
+@import "blocks/modal.scss";

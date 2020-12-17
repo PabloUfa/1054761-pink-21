@@ -57,8 +57,8 @@
                   <legend class="user-achievements__title">Ваши безбашенные достижения в путешествии</legend>
                   <ul class="user-achievements__list">
                     <li class="user-achievements__item">
-                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__shark" id="user-achievements__shark" checked>
-                      <label class="user-achievements__subtitle user-achievements__subtitle--selected" for="user-achievements__shark">Сделал селфи с акулой</label>
+                      <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--not-selected user-achievements__checkbox--selected" type="checkbox" name="user-achievements__shark" id="user-achievements__shark" checked>
+                      <label class="user-achievements__subtitle user-achievements__subtitle--not-selected user-achievements__subtitle--selected" for="user-achievements__shark">Сделал селфи с акулой</label>
                     </li>
                     <li class="user-achievements__item">
                       <input class="visually-hidden user-achievements__checkbox user-achievements__checkbox--selected" type="checkbox" name="user-achievements__sunburned" id="user-achievements__sunburned" checked>
@@ -86,6 +86,7 @@
             </div>
             <div class="contest__container">
               <fieldset class="contest__contacts contest__contacts--off-frame user-contacts">
+                <h2 class="visually-hidden user-contacts__title--big-screen-off">Контактная информация</h2>
                 <legend class="user-contacts__title user-contacts__title--off">Контактная информация</legend>
                 <ul class="user-contacts__list">
                   <li class="user-contacts__item">
@@ -106,15 +107,15 @@
                   <ul class="app-platform__list">
                     <li class="app-platform__item">
                       <input class="visually-hidden app-platform__radio app-platform__radio--selected" type="radio" name="app-platform__group" value="ios" id="app-platform__ios" checked>
-                      <label class="app-platform__subtitle app-platform__radio--selected--selected" for="app-platform__ios">Pink для iOS</label>
+                      <label class="app-platform__subtitle app-platform__radio--selected" for="app-platform__ios">Pink для iOS</label>
                     </li>
                     <li class="app-platform__item">
                       <input class="visually-hidden app-platform__radio app-platform__radio--selected" type="radio" name="app-platform__group" value="android" id="app-platform__android">
-                      <label class="app-platform__subtitle app-platform__radio--selected--selected" for="app-platform__android">Pink на Android</label>
+                      <label class="app-platform__subtitle app-platform__radio--selected" for="app-platform__android">Pink на Android</label>
                     </li>
                     <li class="app-platform__item">
                       <input class="visually-hidden app-platform__radio app-platform__radio--selected" type="radio" name="app-platform__group" value="windows" id="app-platform__windows">
-                      <label class="app-platform__subtitle app-platform__radio--selected--selected" for="app-platform__windows">Windows Phone</label>
+                      <label class="app-platform__subtitle app-platform__radio--selected" for="app-platform__windows">Windows Phone</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -123,12 +124,12 @@
             <div class="contest__container">
               <fieldset class="contest__user-message contest__user-message--off-frame user-message">
                 <legend class="user-message__title">Опишите свои эмоции</legend>
-                <textarea class="user-message__input"  name="user-message"  placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <textarea class="user-message__input"  name="user-message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </fieldset>
             </div>
             <div class="contest__container contest__submit-button-wrapper">
               <button class="contest__submit-button button" type="submit">Отправить форму</button>
-              <p class="contest__explanation">* — обязательные поля</p>
+              <p class="contest__explanation"><span class="contest__explanation--star">*</span> — обязательные поля</p>
             </div>
           </form>
         </div>
@@ -176,7 +177,7 @@
     <section class="modal modal--succes">
       <div class="modal__container">
         <h2 class="modal__title">Ваша заявка отправлена</h2>
-        <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее<br> время мы рассмотрим ее и<br> оповестим вас.</p>
       </div>
       <div class="modal__background modal__background--off">
         <button class="modal__button button">Закрыть окно</button>

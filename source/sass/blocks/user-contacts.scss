@@ -1,0 +1,53 @@
+.user-contacts {
+  margin: 0;
+  padding: 0;
+}
+
+.user-contacts__title {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+
+  &--off {
+    display: none;
+  }
+  // При мобильном разрешении будет виден скринридерам, а при большом будет скрыт от всех
+  &--big-screen-off {
+    display: none;
+  }
+}
+
+.user-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-contacts__item {
+
+}
+
+.user-contacts__subtitle {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $pink;
+  cursor: pointer;
+  user-select: none;
+}
+
+.user-contacts__input {
+  line-height: 30px;
+  color: $dark-blue;
+  border: 2px solid $light-grey-3;
+  border-radius: 2px;
+
+  &::placeholder {
+    line-height: 30px;
+    color: $dark-blue;
+  }
+}
+
+
+
