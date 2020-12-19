@@ -1,0 +1,29 @@
+.user-rating {
+  position: relative;
+}
+
+.user-rating__like-text {
+  margin: 0;
+  padding-left: 31px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $pink;
+  cursor: default;
+}
+
+.user-rating__like-counter {
+
+}
+
+.user-rating__like-icon {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 0px;
+  padding-top: 5px;
+  width: 13px;
+  height: 12px; vertical-align: middle;
+  background-color: $pink;
+  border: none;
+  cursor: pointer;
+}

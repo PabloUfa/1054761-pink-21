@@ -1,0 +1,60 @@
+.best-picture {
+
+}
+
+.best-picture__wrapper {
+  position: relative;
+  display: inline-block;
+
+  &--best-marker::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding-top: 6px;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $basic-white;
+    background-color: $pink;
+  }
+}
+
+.best-picture__user-image {
+  width: 320px;
+  height: 137px;
+}
+
+.best-picture__user-caption {
+  margin: 0;
+  background-color: $lighten-grey;
+}
+
+.best-picture__user-name {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.best-picture__comment-date {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.best-picture__user-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.best-picture__like-wrapper {
+}
+
+.best-picture__like-text {
+
+}
+
+

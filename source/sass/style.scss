@@ -7,6 +7,7 @@
 
 // Blocks
 
+// Index
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -24,6 +25,7 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 
+// form
 @import "blocks/contest-intro.scss";
 @import "blocks/contest.scss";
 @import "blocks/user-info.scss";
@@ -32,3 +34,11 @@
 @import "blocks/app-platform.scss";
 @import "blocks/user-message.scss";
 @import "blocks/modal.scss";
+
+// Catalog
+@import "blocks/user-rating.scss";
+@import "blocks/best-picture.scss";
+@import "blocks/users-pictures.scss";
+@import "blocks/photo-editor.scss";
+
+
