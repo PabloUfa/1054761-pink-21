@@ -1,6 +1,50 @@
 .app-presentation {
   color: $basic-white;
   background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+
+  }
+}
+
+.app-presentation__wrapper {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+  }
+}
+
+.app-presentation__column-left {
+
+}
+
+.app-presentation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 20px;
+
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+
+.app-presentation__intro-wrapper {
+
 }
 
 .app-presentation__intro {
@@ -10,9 +54,22 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .app-presentation__download-button {
+  display: inline-block;
+  min-width: 280px;
   padding: 17px 36px;
   color: $basic-white;
   text-decoration: none;
