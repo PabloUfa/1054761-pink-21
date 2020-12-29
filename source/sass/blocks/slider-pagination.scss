@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .slider-pagination__toggle {

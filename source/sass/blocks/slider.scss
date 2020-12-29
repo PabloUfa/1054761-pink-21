@@ -1,0 +1,25 @@
+.slider__switch-control {
+  display: none;
+  position: absolute;
+  content: "";
+  top: 40px;
+  width: 22px;
+  height: 41px;
+  background-image:url(https://via.placeholder.com/22x41);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--prew {
+    left: 150px;
+  }
+
+  &--next {
+    right: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

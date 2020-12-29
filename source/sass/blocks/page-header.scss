@@ -6,3 +6,24 @@
 .page-header__wrapper {
   background-color: rgba($basic-black, 0.3%);
 }
+
+.page-header__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 0 20px;
+
+
+  @media (min-width: $tablet-width) {
+      max-width: 100%;
+      padding: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 940px;
+      padding: 0 10px;
+      margin: 0 auto;
+  }
+}
