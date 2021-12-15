@@ -1,6 +1,13 @@
 .user-message {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .user-message__title {

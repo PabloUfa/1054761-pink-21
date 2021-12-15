@@ -12,7 +12,7 @@
   bottom: auto;
 
   &--failure {
-    // display: none;
+    display: none;
   }
 
   &--failure .modal__text {
@@ -20,7 +20,7 @@
   }
 
   &--succes {
-    // display: none;
+    display: none;
   }
 
   &--succes .modal__text {
