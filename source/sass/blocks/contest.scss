@@ -2,9 +2,43 @@
 
 }
 
+.contest__container {
+  // width: 280px;
+  // padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0 10px;
+    margin: auto;
+  }
+}
+
 .contest__title {
   font-size: 14px;
   line-height: 30px;
+}
+
+.contest__form {
+  display: flex;
+
+  flex-direction: column;
+
+  // @media (min-width: $tablet-width) {
+  //   width: 640px;
+  //   padding: 0 10px;
+  // }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 }
 
 .contest__contacts {
@@ -38,5 +72,15 @@
 
   &--star {
     color: $pink;
+  }
+}
+
+.contest__submit-button-wrapper {
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
   }
 }

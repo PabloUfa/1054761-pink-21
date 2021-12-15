@@ -12,3 +12,32 @@
   font-size: 14px;
   line-height: 30px;
 }
+
+.page-main__app-presentation {
+  padding-top: 29px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 102px;
+    padding-bottom: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
+    padding-bottom: 130px;
+  }
+}
+
+.page-main__advantages {
+  padding-top: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+    padding-bottom: 59px;
+  }
+}
