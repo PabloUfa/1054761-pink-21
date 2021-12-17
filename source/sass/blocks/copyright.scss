@@ -1,22 +1,25 @@
 .copyright {
+  display: inline-block;
   position: relative;
 }
 
 .copyright__text {
   font-size: 14px;
   line-height: 18px;
+  padding-right: 42px;
+  user-select: none;
+
 
 }
 
 .copyright__link {
-  padding-right: 42px;
 
   &--developed::before {
     // display: block;
     position: absolute;
     content: "";
-    top: 10px;
-    left: 103px;
+    top: 5px;
+    right: 0;
     width: 27px;
     height: 34px;
     background-image: url(https://via.placeholder.com/27x34);

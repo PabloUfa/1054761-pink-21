@@ -1,12 +1,14 @@
 .modal-action-map {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
-    height: 374px;
+    min-height: 374px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
-    height: 502px;
+    min-height: 502px;
   }
 }
