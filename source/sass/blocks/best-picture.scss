@@ -6,6 +6,8 @@
   position: relative;
   display: inline-block;
 
+  // padding-top: 60px;
+
   &--best-marker::before {
     content: "Панорама дня";
     position: absolute;
@@ -24,19 +26,53 @@
 }
 
 .best-picture__user-image {
+  display: block;
   width: 320px;
-  height: 137px;
+  // width: 100%;
+  // height: 137px;
+  // width: 100%;
+  // height: auto;
+}
+
+.best-picture__container {
+  // padding: 0 20px;
+  margin: 0 auto;
+  width: 280px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    padding: 0 10px;
+  }
 }
 
 .best-picture__user-caption {
   margin: 0;
+  padding: 25px 10px 26px 17px;
   background-color: $lighten-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+  }
 }
 
 .best-picture__user-name {
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .best-picture__comment-date {
@@ -47,10 +83,21 @@
 
 .best-picture__user-text {
   margin: 0;
+  margin-bottom: 25px;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin-bottom: 0;
+  }
 }
 
 .best-picture__like-wrapper {
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    // display: block;
+  }
 }
 
 .best-picture__like-text {

@@ -13,10 +13,10 @@
           <a class="page-header__logo" href="index.html">
             <img class="page-header__logo-image" src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип приложения «Пинк»">
           </a>
-          <nav class="page-header__main-nav main-nav">
+          <nav class="page-header__main-nav main-nav main-nav--closed" >
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="index.html">Главная</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фотографии</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
               <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
@@ -26,15 +26,15 @@
       </header>
     </div>
     <main class="page-main">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
-      <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <h1 class="page-main__title"><span class="page-main__title--break">Фотографии</span> пользователей</h1>
       <section class="page-main__best-picture best-picture best-picture--background">
+        <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <h2 class="visually-hidden">Здесь ежедневно появляются самые интересные фото от наших пользователей</h2>
         <div class="best-picture__wrapper best-picture__wrapper--best-marker">
           <img class="best-picture__user-image" src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама с моста на фоне гор,покрытых деревьями">
         </div>
         <div class="best-picture__container">
-          <blockquote class="best-picture__user-caption best-picture__container">
+          <blockquote class="best-picture__user-caption">
             <cite class="best-picture__user-name">
               Анна
               <time class="best-picture__comment-date" datetime="2020-12-05">(5 минут назад)</time>
@@ -54,11 +54,13 @@
             <li class="users-pictures__item">
               <img class="users-pictures__user-image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Белый автомобиль снимается в рекламе">
               <blockquote class="users-pictures__user-caption">
-                <cite class="users-pictures__user-name">
-                  Левон
-                  <time class="users-pictures__comment-date" datetime="2020-12-05">(5 часов назад)</time>
-                </cite>
-                <p class="users-pictures__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div>
+                  <cite class="users-pictures__user-name">
+                    Левон
+                    <time class="users-pictures__comment-date" datetime="2020-12-05">(5 часов назад)</time>
+                  </cite>
+                  <p class="users-pictures__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </div>
                 <div class="users-pictures__like-wrapper user-rating">
                   <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">356</span></p>
                   <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
@@ -68,11 +70,13 @@
             <li class="users-pictures__item">
               <img class="users-pictures__user-image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Барабанная установка">
               <blockquote class="users-pictures__user-caption">
-                <cite class="users-pictures__user-name">
-                  Антон
-                  <time class="users-pictures__comment-date" datetime="2020-12-05">(12 часов назад)</time>
-                </cite>
-                <p class="users-pictures__user-text">Соседи будут рады!</p>
+                <div>
+                  <cite class="users-pictures__user-name">
+                    Антон
+                    <time class="users-pictures__comment-date" datetime="2020-12-05">(12 часов назад)</time>
+                  </cite>
+                  <p class="users-pictures__user-text">Соседи будут рады!</p>
+                </div>
                 <div class="users-pictures__like-wrapper user-rating">
                   <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">666</span></p>
                   <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
@@ -82,11 +86,13 @@
             <li class="users-pictures__item">
               <img class="users-pictures__user-image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Меланхоличное фото стеклянного потолка">
               <blockquote class="users-pictures__user-caption">
-                <cite class="users-pictures__user-name">
-                  Борис
-                  <time class="users-pictures__comment-date" datetime="2020-12-05">(20 часов назад)</time>
-                </cite>
-                <p class="users-pictures__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div>
+                  <cite class="users-pictures__user-name">
+                    Борис
+                    <time class="users-pictures__comment-date" datetime="2020-12-05">(20 часов назад)</time>
+                  </cite>
+                  <p class="users-pictures__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                </div>
                 <div class="users-pictures__like-wrapper user-rating">
                   <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">215</span></p>
                   <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
@@ -96,11 +102,13 @@
             <li class="users-pictures__item">
               <img class="users-pictures__user-image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Кубанская ярмарка с арбузами и дынями под большим навесом">
               <blockquote class="users-pictures__user-caption">
-                <cite class="users-pictures__user-name">
-                  Сергей
-                  <time class="users-pictures__comment-date" datetime="2020-12-05">(25 часов назад)</time>
-                </cite>
-                <p class="users-pictures__user-text">Самая кубанская в мире!</p>
+                <div>
+                  <cite class="users-pictures__user-name">
+                    Сергей
+                    <time class="users-pictures__comment-date" datetime="2020-12-05">(25 часов назад)</time>
+                  </cite>
+                  <p class="users-pictures__user-text">Самая кубанская в мире!</p>
+                </div>
                 <div class="users-pictures__like-wrapper user-rating">
                   <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">4</span></p>
                   <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
@@ -110,11 +118,13 @@
             <li class="users-pictures__item">
               <img class="users-pictures__user-image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Фото ног свисаящих со склона горы">
               <blockquote class="users-pictures__user-caption">
-                <cite class="users-pictures__user-name">
-                  Максим
-                  <time class="users-pictures__comment-date" datetime="2020-12-05">(40 часов назад)</time>
-                </cite>
-                <p class="users-pictures__user-text">Где снег-то?</p>
+                <div>
+                  <cite class="users-pictures__user-name">
+                    Максим
+                    <time class="users-pictures__comment-date" datetime="2020-12-05">(40 часов назад)</time>
+                  </cite>
+                  <p class="users-pictures__user-text">Где снег-то?</p>
+                </div>
                 <div class="users-pictures__like-wrapper user-rating">
                   <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">150</span></p>
                   <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
@@ -124,11 +134,13 @@
             <li class="users-pictures__item">
               <img class="users-pictures__user-image" src="https://via.placeholder.com/280x180" width="280" height="180" alt="Крыло самолета в небе на фоне закатного солнца">
               <blockquote class="users-pictures__user-caption">
-                <cite class="users-pictures__user-name">
-                  Надежда
-                  <time class="users-pictures__comment-date" datetime="2020-12-05">(45 часов назад)</time>
-                </cite>
-                <p class="users-pictures__user-text">Всем GM и взаимные лайки!</p>
+                <div>
+                  <cite class="users-pictures__user-name">
+                    Надежда
+                    <time class="users-pictures__comment-date" datetime="2020-12-05">(45 часов назад)</time>
+                  </cite>
+                  <p class="users-pictures__user-text">Всем GM и взаимные лайки!</p>
+                </div>
                 <div class="users-pictures__like-wrapper user-rating">
                   <p class="user-rating__like-text">Нравится: <span class="user-rating__like-counter">2560</span></p>
                   <button class="user-rating__like-icon" type="button" aria-label="Кнопка: нравится"></button>
@@ -146,13 +158,13 @@
         </div>
         <div class="photo-editor__wrapper">
           <div class="photo-editor__container">
-            <form method="get" action="https://echo.htmlacademy.ru" >
+            <form class="photo-editor__form" method="get" action="https://echo.htmlacademy.ru" >
               <img class="photo-editor__added-photo" src="https://via.placeholder.com/280x374" width="280" height="374" alt="Ваше добавленное фото">
               <div class="photo-editor__settings ">
                 <ul class="photo-editor__list">
                   <li class="photo-editor__item photo-editor__item--current">
                     <button class="photo-editor__visual-setting photo-editor__visual-setting--cropping-icon photo-editor__visual-setting--current" type="button" aria-label="Обрезка фото по размеру"></button>
-                    <div class="photo-editor__range-controls">
+                    <div class="photo-editor__range-controls photo-editor__range-controls--current">
                       <div class="photo-editor__range-scale"></div>
                       <div class="photo-editor__range-toggle" tabindex="0" style="left: 80%;"></div>
                     </div>
@@ -172,10 +184,10 @@
                     </div>
                   </li>
                 </ul>
-              </div>
-              <div class="photo-editor__buttons_wrapper">
-                <button class="photo-editor__button photo-editor__button--submit" type="submit">Запостить</button>
-                <button class="photo-editor__button photo-editor__button--cancel" type="button" disabled>Отмена</button>
+                <div class="photo-editor__buttons_wrapper">
+                  <button class="photo-editor__button photo-editor__button--submit" type="submit">Запостить</button>
+                  <button class="photo-editor__button photo-editor__button--cancel" type="button" disabled>Отмена</button>
+                </div>
               </div>
             </form>
           </div>

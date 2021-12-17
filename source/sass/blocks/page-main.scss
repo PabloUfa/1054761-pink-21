@@ -1,13 +1,45 @@
 
 .page-main__title {
+  margin: 0;
+  padding-top: 54px;
+  padding-bottom: 84px;
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
+  text-align: center;
+
+  &--break {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
 }
 
 .page-main__text {
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 590px;
+  }
+}
+
+.page-main__best-picture {
+  padding-top: 54px;
 }
 
 .page-main__app-presentation {
@@ -87,4 +119,8 @@
   @media (min-width: $desktop-width) {
     padding-top: 74px;
   }
+}
+
+.page-main-photo-editor {
+  margin-top: 49px;
 }
