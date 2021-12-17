@@ -2,11 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0;
+
+
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
+
+
 
 .slider-pagination__toggle {
   margin-right: 19px;
@@ -24,5 +29,9 @@
     background-color: $basic-white;
     border: 3px solid $dark-blue;
   }
+}
+
+.slider-pagination__toggle:last-child {
+  margin-right: 0;
 }
 

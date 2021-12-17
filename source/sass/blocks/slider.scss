@@ -2,7 +2,7 @@
   display: none;
   position: absolute;
   content: "";
-  top: 40px;
+  top: calc(50% - 11px);
   width: 22px;
   height: 41px;
   background-image:url(https://via.placeholder.com/22x41);
@@ -22,4 +22,9 @@
   @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+.slider {
+  // display: flex;
+  // justify-content: space-between;
 }

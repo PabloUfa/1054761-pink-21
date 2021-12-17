@@ -1,22 +1,20 @@
-.tariffs {
-
-}
 
 .tariffs__wrapper {
   background-color: $lighten-grey;
+  overflow: hidden;
 }
 
 .tariffs__container {
+  margin: 0 auto;
   width: 320px;
-
-
-  // @media (min-width: $mobile-width) {
-  //   overflow: hidden;
-  // }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 640px;
     padding: 0 10px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,16 +26,14 @@
 .tariffs__table {
   border-spacing: 0;
   border-radius: 10px;
-  justify-content: center;
+  padding-bottom: 45px;
 
-  // @media (max-width: $mobile-width) {
-  //   margin-left: -250px;
-  // }
+  @media (min-width: $tablet-width) {
+    padding-bottom: 70px;
+  }
 
-  @media (max-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 90px;
   }
 }
 
@@ -61,6 +57,7 @@
   background-color: $dark-blue;
   overflow: hidden;
   border-right: 2px solid $lighten-grey;
+
   &:last-child {
     border-right: 2px solid $dark-blue;
     border-radius: 0 2px 0 0;
@@ -89,11 +86,25 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 152px;
+    min-width: 150px;
+
+    &--hit-marker::before {
+      top: 5px;
+      left: -45px;
+      font-size: 12px;
+      line-height: 26px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 233px;
+    width: 232px;
+
+    &--hit-marker::before {
+      top: 14px;
+      left: -30px;
+      font-size: 14px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -101,20 +112,38 @@
   display: block;
   margin: 0;
   padding: 0;
-  margin-top: 14px;
+  margin-top: 16px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    line-height: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+  }
 }
 
 .tariffs__cost {
   display: block;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 35px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 300;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    line-height: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .tariffs__option {
@@ -122,7 +151,7 @@
   font-size: 14px;
   line-height: 30px;
   padding: 12px 0;
-  padding-left: 22px;
+  // padding-left: 22px;
   border-right: 2px solid $light-grey-3;
   border-bottom: 2px solid $light-grey-3;
   background-color: $basic-white;
@@ -131,6 +160,7 @@
     text-transform: uppercase;
     border-right: none;
     border-bottom: none;
+    padding-left: 22px;
   }
 
   &--big-screens {
@@ -139,20 +169,8 @@
     border-bottom: 2px solid $light-grey-3;
   }
 
-  // &--big-screens-round-top {
-  //   border-top: 2px solid $light-grey-3;
-  //   border-radius: 3px 0 0 0;
-  // }
-
-  // &--big-screens-round-bottom {
-  //   border-radius: 0 0 0 3px;
-  // }
-
-  // &--rounded {
-  //   border-radius: 0 0 3px 0;
-  // }
-
   @media (min-width: $tablet-width) {
+
 
     &--slide-mode {
       display: none;
@@ -160,6 +178,8 @@
 
     &--big-screens {
       display: block;
+      min-width: 152px;
+      padding-left: 15px;
     }
 
     &--big-screens-round-top {
@@ -178,12 +198,16 @@
 
   @media (min-width: $desktop-width) {
 
+
     &--slide-mode {
       display: none;
     }
 
     &--big-screens {
+      font-size: 18px;
       display: block;
+      width: 233px;
+      padding-left: 22px;
     }
 
     &--big-screens-round-top {
@@ -198,6 +222,18 @@
     &--rounded {
       border-radius: 0 0 3px 0;
     }
+  }
+}
+
+.tariffs__table-wrapper {
+
+
+  @media (min-width: $tablet-width) {
+    min-width: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 231px;
   }
 }
 
@@ -212,6 +248,8 @@
   background-position: top center;
 
   &--no {
+    top: 16px;
+    right: 19px;
     width: 27px;
     height: 27px;
     background-image: url(https://via.placeholder.com/27x27);
@@ -219,6 +257,8 @@
   }
 
   &--yes {
+    top: 19px;
+    right: 17px;
     width: 31px;
     height: 21px;
     background-image: url(https://via.placeholder.com/31x21);
@@ -251,10 +291,11 @@
   }
 }
 
-// .tariffs__optionv {
-//   border-radius: 0 0 2px 0;
-// }
-
 .tariffs__toggles {
  justify-content: center;
+ padding-bottom: 49px;
+
+ @media (min-width: $tablet-width) {
+   display: none;
+ }
 }
