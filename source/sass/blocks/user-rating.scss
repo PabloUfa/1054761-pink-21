@@ -9,7 +9,19 @@
   text-transform: uppercase;
   color: $pink;
   cursor: default;
+
+
 }
+
+@media (min-width: $tablet-width) {
+
+  .best-picture__user-caption .user-rating__like-text {
+    padding-left: 0;
+    padding-right: 29px;
+  }
+}
+
+
 
 .user-rating__like-counter {
 
@@ -19,11 +31,23 @@
   position: absolute;
   content: "";
   top: 6px;
-  left: 0px;
+  left: 0;
   padding-top: 5px;
   width: 13px;
   height: 12px; vertical-align: middle;
   background-color: $pink;
   border: none;
   cursor: pointer;
+
+
 }
+
+@media (min-width: $tablet-width) {
+
+  .best-picture__user-caption .user-rating__like-icon {
+    left: auto;
+    right: 0;
+  }
+ }
+
+
