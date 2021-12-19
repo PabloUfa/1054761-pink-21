@@ -3,35 +3,53 @@
 }
 
 .contest__container {
-  // width: 280px;
-  // padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    width: 640px;
-    padding: 0 10px;
+    width: 620px;
+    margin: 0 auto;
+    // padding: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding: 0 10px;
-    margin: auto;
+    // padding: 0 10px;
   }
 }
 
-.contest__title {
+.contest-heading {
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 280px;
+
+  &--form-text {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 490px;
+    font-size: 18px;
+
+    &--form-text {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 756px;
+  }
 }
 
 .contest__form {
   display: flex;
-
   flex-direction: column;
+  margin-top: 50px;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 640px;
-  //   padding: 0 10px;
-  // }
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -41,46 +59,57 @@
   }
 }
 
-.contest__contacts {
-  border: 2px solid $light-grey-3;
+.contest__submit-button-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 48px;
 
-  &--off-frame {
-    border: none;
+  @media (min-width: $tablet-width) {
+    order: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-top: 74px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
-.contest__app-platform {
-  border: 2px solid $light-grey-3;
-
-  &--off-frame {
-    border: none;
+.contest__submit-button {
+  @media (min-width: $tablet-width) {
+    min-width: 300px;
   }
 }
 
-.contest__user-message {
-  border: 2px solid $light-grey-3;
-
-  &--off-frame {
-    border: none;
-  }
-}
-
-.contest__explanation {
+.contest__submit-button-explanation {
   margin: 0;
+  margin-top: 42px;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
 
   &--star {
     color: $pink;
   }
-}
 
-.contest__submit-button-wrapper {
+  &--hide-text {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
-    order: 5;
+    margin-top: 0;
+    text-align: start;
   }
 
   @media (min-width: $desktop-width) {
+
+    &--hide-text {
+      display: inline-block;
+    }
   }
 }
