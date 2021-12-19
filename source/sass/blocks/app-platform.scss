@@ -1,19 +1,32 @@
 .app-platform {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 42px;
   background-color: $lighten-grey;
 
-  @media (min-width: $mobile-width) {
-    padding: 0 20px;
-  }
-
   @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
     order: 1;
     background-color: transparent;
   }
+}
+
+.app-platform__fieldset {
+  padding: 0;
+  // padding: 50px 0;
+  margin: 0 auto;
+  width: 280px;
+
+  &--off-frame {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    // padding: 60px 0 52px 62px;
+    width: 620px;
+    border: 2px solid $light-grey-3;
+  }
 
   @media (min-width: $desktop-width) {
-    // order: 2;
+    width: 435px;
   }
 }
 
@@ -28,25 +41,45 @@
 // }
 
 .app-platform__title {
+  padding-top: 42px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: $pink;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 25px;
+    display: inline-block;
+  }
 }
 
 .app-platform__list {
   margin: 0;
   padding: 0;
+  padding: 50px 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 52px 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 0 72px 49px;
+  }
 }
 
 .app-platform__item {
+  margin-bottom: 45px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .app-platform__subtitle {
   position: relative;
-  padding-left: 90px;
+  padding-left: 78px;
   line-height: 30px;
   cursor: pointer;
   user-select: none;
@@ -55,7 +88,7 @@
 .app-platform__radio + .app-platform__subtitle::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -6px;
   left: 0;
   width: 41px;
   height: 41px;
@@ -67,7 +100,7 @@
 .app-platform__radio--selected:checked + .app-platform__subtitle::after {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 7px;
   left: 13px;
   width: 15px;
   height: 15px;
